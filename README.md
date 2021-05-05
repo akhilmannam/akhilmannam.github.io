@@ -1,1 +1,0 @@
-Website containing details, projects about me
