@@ -1,4 +1,3 @@
-import { Button } from "@material-ui/core";
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 
@@ -8,8 +7,20 @@ function Navbar() {
 	return (
 		<NavContainer>
 			<Nav>
-				<Logo href="#">Akhil Mannam</Logo>
+				<Logo href="#">
+					<Img src="/assets/a.png" alt="logo" />
+				</Logo>
 
+				<div style={{ display: "none" }}>
+					Icons made by{" "}
+					<a href="https://www.freepik.com" title="Freepik">
+						Freepik
+					</a>{" "}
+					from{" "}
+					<a href="https://www.flaticon.com/" title="Flaticon">
+						www.flaticon.com
+					</a>
+				</div>
 				<Hamburger onClick={() => setIsOpen(!isOpen)} isOpen={isOpen}>
 					<div />
 					<div />
@@ -34,22 +45,24 @@ function Navbar() {
 					>
 						Contact
 					</MenuLink>
-					<Button
-						onClick={() => setIsOpen(!isOpen)}
-						href="#"
-						color="primary"
-					>
+					<MenuLink onClick={() => setIsOpen(!isOpen)} href="#">
 						Resume
-					</Button>
+					</MenuLink>
 				</Menu>
 			</Nav>
 		</NavContainer>
 	);
 }
 
+const Img = styled.img`
+	height: 30px;
+	width: 30px;
+	margin: 5px;
+`;
+
 const Logo = styled.a`
 	padding: 1rem 0;
-	color: #f06292;
+	color: #0a192f;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 1.25rem;
@@ -60,7 +73,7 @@ const Logo = styled.a`
 	}
 
 	&:hover {
-		color: #f06292;
+		color: #0a192f;
 		text-decoration: none;
 	}
 `;
