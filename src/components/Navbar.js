@@ -98,7 +98,6 @@ const Menu = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	z-index: 9999;
 
 	@media (max-width: 768px) {
 		overflow: hidden;
@@ -118,7 +117,6 @@ const MenuLink = styled.a`
 	transition: all 0.3s ease-in;
 	font-size: 0.9rem;
 	transition: all 0.3s ease-in;
-	nav-index: 9999;
 
 	&:hover {
 		color: rebeccapurple;
@@ -126,10 +124,11 @@ const MenuLink = styled.a`
 	}
 `;
 
-const Nav = styled.div`
+const Nav = styled.header`
 	overflow: hidden;
 	position: fixed;
 	top: 0px;
+	z-index: 4;
 	padding: 0 2rem;
 	display: flex;
 	justify-content: space-between;
