@@ -45,7 +45,12 @@ function Navbar() {
 					>
 						Contact
 					</MenuLink>
-					<MenuLink onClick={() => setIsOpen(!isOpen)} href="#">
+					<MenuLink
+						onClick={() => setIsOpen(!isOpen)}
+						href="/resume.pdf"
+						target="_blank"
+						referrerPolicy="no-referrer"
+					>
 						Resume
 					</MenuLink>
 				</Menu>
