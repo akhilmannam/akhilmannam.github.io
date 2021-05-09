@@ -21,10 +21,23 @@ function Navbar() {
 						www.flaticon.com
 					</a>
 				</div>
-				<Hamburger onClick={() => setIsOpen(!isOpen)} isOpen={isOpen}>
+				{/* <Hamburger onClick={() => setIsOpen(!isOpen)} isOpen={isOpen}>
 					<div />
 					<div />
-				</Hamburger>
+				</Hamburger> */}
+				<button
+					className={
+						!isOpen
+							? "hamburger hamburger--vortex"
+							: "hamburger hamburger--vortex is-active"
+					}
+					type="button"
+					onClick={() => setIsOpen(!isOpen)}
+				>
+					<span className="hamburger-box">
+						<span className="hamburger-inner"></span>
+					</span>
+				</button>
 
 				<Menu isOpen={isOpen}>
 					<MenuLink onClick={() => setIsOpen(!isOpen)} href="#about">
@@ -142,7 +155,7 @@ const MenuLink = styled.a`
 	}
 `;
 
-const Nav = styled.header`
+const Nav = styled.nav`
 	overflow: hidden;
 	position: fixed;
 	top: 0px;
