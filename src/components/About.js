@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useDencrypt } from "use-dencrypt-effect";
 import styled from "styled-components/macro";
+import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 
 const values = [
 	"నమస్కారం, నా పేరు",
@@ -19,7 +21,7 @@ const About = () => {
 			dencrypt(values[i]);
 
 			i = i === values.length - 1 ? 0 : i + 1;
-		}, 5000);
+		}, 3000);
 
 		return () => clearInterval(action);
 		//eslint-disable-next-line
@@ -35,17 +37,27 @@ const About = () => {
 			<IntroDescription>
 				<DescriptionContainer>
 					<DescriptionTitle>{result}</DescriptionTitle>
-					<DescriptionName>Akhil Mannam</DescriptionName>
+
+					<DescriptionName>
+						<Zoom bottom cascade>
+							Akhil Mannam
+						</Zoom>
+					</DescriptionName>
 					<DescriptionText>
-						I build things for the web. I am a full-stack developer
-						who specializes in building(and occasionally designing)
-						excellent digital experiences.
+						<Slide left>
+							I build things for the web. I am a full-stack
+							developer who specializes in building(and
+							occasionally designing) excellent digital
+							experiences.
+						</Slide>
 					</DescriptionText>
 
 					<DescriptionText>
-						I devote significant attention to developing bug-free
-						code and utilize high-quality packages which make coding
-						with React easier than usual.
+						<Slide right>
+							I devote significant attention to developing
+							bug-free code and utilize high-quality packages
+							which make coding with React easier than usual.
+						</Slide>
 					</DescriptionText>
 				</DescriptionContainer>
 			</IntroDescription>
@@ -110,7 +122,6 @@ const DescriptionTitle = styled.h3`
 `;
 
 const DescriptionName = styled.h2`
-	font-size: 2.25rem;
 	margin-bottom: 10px;
 `;
 

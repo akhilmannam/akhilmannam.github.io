@@ -42,6 +42,10 @@ code {
 	color: #1da1f2 !important;
 }
 
+#whatsapp{
+    color: #075E54 !important;
+}
+
 .hamburger {
 	padding: 15px 15px;
 	display: none;
@@ -144,5 +148,12 @@ code {
 .hamburger--vortex.is-active .hamburger-inner::after {
 	bottom: 0;
 	transform: rotate(90deg);
+}
+
+h1{
+    padding: 0 2rem;
+    margin: 1rem 0 !important;
+    font-weight: 600;
+    line-height: 1.1;
 }
 

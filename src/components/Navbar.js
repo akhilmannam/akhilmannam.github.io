@@ -96,34 +96,6 @@ const Logo = styled.a`
 	}
 `;
 
-const Hamburger = styled.div`
-	display: none;
-	flex-direction: column;
-	cursor: pointer;
-
-	@media (max-width: 768px) {
-		display: flex;
-	}
-
-	div {
-		height: 3px;
-		width: 30px;
-		background: black;
-		margin: 2px;
-		border-radius: 5px;
-		transition: all 0.3s ease-in;
-		border-radius: 30%;
-
-		&:nth-child(1) {
-			transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "")};
-		}
-
-		&:nth-child(2) {
-			transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "")};
-		}
-	}
-`;
-
 const Menu = styled.div`
 	display: flex;
 	justify-content: space-between;
