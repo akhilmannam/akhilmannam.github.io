@@ -1,5 +1,14 @@
 export const projectDetails = [
 	{
+		title: "Job Portal",
+		description:
+			"A web app built that provides platform for both job seekers and recruiters to achieve their respective goals. Implemented role based login system and a dashboard for both the recruiter and jobseeker",
+		git: "https://github.com/akhilmannam/job-portal-frontend",
+		site: "https://jobportal-frontend.netlify.app/",
+		tech: ["React", "Express", "Node.js", "MongoDB"],
+		background: "jobportal.jpg",
+	},
+	{
 		title: "URL Shortener",
 		description:
 			"A web app built that provides short aliases for redirection of long URLs. Implemented login system and a dashboard for displaying all the user generated URLs",
@@ -13,8 +22,7 @@ export const projectDetails = [
 		description:
 			"A desktop app built to convert a .mp4 file to .m3u8 format, which is used for streaming on the web. Utilized ffmpeg multimedia framework for the conversion",
 		git: "https://github.com/akhilmannam/video-converter",
-		site:
-			"https://drive.google.com/file/d/1hrQ2Uwo6HnwtB4sQPej01lX5J8HMdz-4/view?usp=sharing",
+		site: "https://drive.google.com/file/d/1hrQ2Uwo6HnwtB4sQPej01lX5J8HMdz-4/view?usp=sharing",
 		tech: ["Electron JS", "Node.js", "ffmpeg"],
 		background: "videoconverter.jpg",
 	},
