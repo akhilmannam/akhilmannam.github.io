@@ -2,7 +2,7 @@ export const projectDetails = [
 	{
 		title: "Job Portal",
 		description:
-			"A web app built that provides platform for both job seekers and recruiters to achieve their respective goals. Implemented role based login system and a dashboard for both the recruiter and jobseeker",
+			"A platform for both job seekers and recruiters to achieve their respective goals. Implemented role based login system and a dashboard for both the recruiter and jobseeker",
 		git: "https://github.com/akhilmannam/job-portal-frontend",
 		site: "https://jobportal-frontend.netlify.app/",
 		tech: ["React", "Express", "Node.js", "MongoDB"],
