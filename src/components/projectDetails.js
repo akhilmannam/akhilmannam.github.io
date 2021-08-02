@@ -13,7 +13,7 @@ export const projectDetails = [
 		description:
 			"A web app built that provides short aliases for redirection of long URLs. Implemented login system and a dashboard for displaying all the user generated URLs",
 		git: "https://github.com/akhilmannam/urlshortener-frontend",
-		site: "https://urlshortener-fe.herokuapp.com/",
+		site: "https://url-shortener-fe.netlify.app/",
 		tech: ["React", "Express", "Node.js", "MongoDB"],
 		background: "urlshortener.jpg",
 	},
